@@ -21,10 +21,14 @@ opforGear = [];
 bluforLightVehicles = [];
 bluforHeavyVehicles = [];
 bluforAircraft = [];
+bluforGarrisonConfig = [];
 
 opforLightVehicles = [];
 opforHeavyVehicles = [];
 opforAircraft = [];
+opForGarrsionConfig = [];
+
+resistanceGarrisonConfig = [];
 
 Blufor_CV = objNull;
 Opfor_CV = objNull;
@@ -36,22 +40,17 @@ defaultGear = [
 	"ItemGPS"
 ];
 
-spawnPoints = [];
-{
-	if(_x find "spawn" != -1) then {spawnPoints pushBack _x;};
-} foreach allMapMarkers;
-
-allTowns = [];
-{
-	if(_x find "town" != -1) then {
-		allTowns pushBack _x;
-	};
-} forEach allMapMarkers;
-
 if(!isNil "ace_common_fnc_isModLoaded") then {
 	call compile preprocessFile "Configuration\Templates\ACE_Default.sqf";
+	call compile preprocessFile "Configuration\Templates\USMC_Blufor.sqf";
+	call compile preprocessFile "Configuration\Templates\USMC_Blufor.sqf";
+	call compile preprocessFile "Configuration\Templates\CHDZK_Resistance.sqf";
 };
+
 // add stuff for vanilla medical otherwise
 bluforGear = bluforGear + defaultGear;
 opforGear = opforGear + defaultGear;
+
+// set up the markers
+[] call SpawnMarkers;
 diag_log "Exiting init var";

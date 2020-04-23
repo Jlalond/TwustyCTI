@@ -8,4 +8,5 @@ CanBuild = compile preprocessFile "Building\canBuild.sqf";
 SetUpCommandVehicle = compile preprocessFile "setUpCommandVehicle.sqf";
 GameOverHandler = compile preprocessFile "Command\gameOverHandler.sqf";
 AddBehaviorToPlacable = compile preprocessFile "Building\addCommandsToPlacable.sqf";
+SpawnMarkers = compile preprocessFile "spawnMarkers.sqf";
 diag_log "Function tabled completed";

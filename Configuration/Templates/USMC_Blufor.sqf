@@ -4,10 +4,10 @@
 Blufor_CV_Type = "";
 
 BluforLightVehicleLevelOne = [
-	[["rhsusf_m998_w_4dr", 300]],
-	[["rhsusf_m1025_w", 300]],
-	[["rshusf_m1025_w_m2", 500]],
-	[["rhsusf_M1078A1P2_WD_fmtv_usarmy", 400]]
+	["rhsusf_m998_w_4dr", 300],
+	["rhsusf_m1025_w", 300],
+	["rshusf_m1025_w_m2", 500],
+	["rhsusf_M1078A1P2_WD_fmtv_usarmy", 400]
 ];
 
 BluforGearLevelOne = [
