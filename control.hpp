@@ -1,57 +1,55 @@
 class vehicleDialog
 {
-	idd = "1";
+	idd=100;
 	class controls
 	{
-		class baseFrame: RscFrame
+
+		////////////////////////////////////////////////////////
+		// GUI EDITOR OUTPUT START (by Twusty, v1.063, #Zocobo)
+		////////////////////////////////////////////////////////
+
+		class VehiclePurchaseFrame: RscFrame
 		{
 			idc = 1800;
-			x = 0.299427 * safezoneW + safezoneX;
-			y = 0.236926 * safezoneH + safezoneY;
-			w = 0.402187 * safezoneW;
+			x = 0.298906 * safezoneW + safezoneX;
+			y = 0.236 * safezoneH + safezoneY;
+			w = 0.3 * safezoneW;
 			h = 0.528 * safezoneH;
 		};
-		class vehicleListBox: RscListbox
+		class VehiclePurchaseClassNameListBox: RscListbox
 		{
-			idc = 1500;
-			text = "List for Vehicle Info"; //--- ToDo: Localize;
+			idc = 100;
 			x = 0.304062 * safezoneW + safezoneX;
 			y = 0.247 * safezoneH + safezoneY;
-			w = 0.134062 * safezoneW;
-			h = 0.495 * safezoneH;
+			w = 0.15 * safezoneW;
+			h = 0.363 * safezoneH;
 		};
-		class vehicleButtonBuy: RscButton
+		class VehiclePurchasePriceListBox: RscListbox
+		{
+			idc = 101;
+			x = 0.46875 * safezoneW + safezoneX;
+			y = 0.247 * safezoneH + safezoneY;
+			w = 0.1125 * safezoneW;
+			h = 0.363 * safezoneH;
+		};
+		class VehiclePurchaseBuyButton: RscButton
 		{
 			idc = 1600;
 			text = "BUY"; //--- ToDo: Localize;
-			x = 0.448438 * safezoneW + safezoneX;
+			x = 0.304062 * safezoneW + safezoneX;
 			y = 0.621 * safezoneH + safezoneY;
-			w = 0.2475 * safezoneW;
-			h = 0.121 * safezoneH;
+			w = 0.128906 * safezoneW;
+			h = 0.132 * safezoneH;
 		};
-		class RscText_1000: RscText
-		{
-			idc = 1000;
-			x = 0.732323;
-			y = 0.00841752;
-			w = 0.1;
-			h = 0.1;
-		};
-		class vehicleInfoSection: RscFrame
-		{
-			idc = 1801;
-			x = 0.448438 * safezoneW + safezoneX;
-			y = 0.247 * safezoneH + safezoneY;
-			w = 0.2475 * safezoneW;
-			h = 0.352 * safezoneH;
-		};
-	}
-}
+		////////////////////////////////////////////////////////
+		// GUI EDITOR OUTPUT END
+		////////////////////////////////////////////////////////
+	};
+};
 
 
 class commanderDialog 
 {
-	idd = "2"
 	class controls 
 	{
 		////////////////////////////////////////////////////////
@@ -110,5 +108,6 @@ class commanderDialog
 		// GUI EDITOR OUTPUT END
 		////////////////////////////////////////////////////////
 
-	}
-}
+	};
+};
+

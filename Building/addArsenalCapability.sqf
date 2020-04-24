@@ -1,4 +1,4 @@
-params ["_building", "_side", "_type"];
+params["_building", "_side"];
 
 if(isMultiplayer && !isServer) exitWith {};
 

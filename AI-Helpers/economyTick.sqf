@@ -2,7 +2,7 @@ if(!isMultiplayer) exitWith{}; // spin up the single player equivalent
 if(!isServer || hasInterface) exitWith{};
 
 while{true} do {
-	sleep 300;
+	sleep 150;
 	currencyChanging = true;
 	publicVariable "currencyChanging";
 	_bluforCash = server getVariable["BluforCash", 0];

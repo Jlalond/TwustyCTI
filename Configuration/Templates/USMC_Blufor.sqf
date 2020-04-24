@@ -47,3 +47,4 @@ BluforGearLevelOne = [
 
 bluforLightVehicles = bluforLightVehicles + BluforLightVehicleLevelOne;
 bluforGear = bluforGear + BluforGearLevelOne;
+publicVariable "bluforGear";

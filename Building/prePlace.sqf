@@ -2,18 +2,19 @@ params ["_building", "_cost", "_type"];
 
 sleep 3;
 _cash = 0;
-if(side player == west) then {
-	_cash = server getVariable["BluforCash", 0];
-}
-else
-{
-	_cash = server getVariable["OpforCash", 0];
-};
+if(isMultiplayer) then {
+	if(side player == west) then {
+		_cash = server getVariable["BluforCash", 0];
+	}
+	else
+	{
+		_cash = server getVariable["OpforCash", 0];
+	};
 
-if(_cash < _cost) exitWith {
-	hint "Not enough cash to place building";
+	if(_cash < _cost) exitWith {
+		hint "Not enough cash to place building";
+	};
 };
-
 _pos = player modelToWorld [0,20,0];
 _veh = _building createVehicle _pos;
 _veh enableSimulationGlobal false;
@@ -38,15 +39,17 @@ else
 {
 	hint "Placing Item";
 	_veh enableSimulationGlobal true;
-	_cash = _cash - _cost;
-	if(side player == west) then {
-		server setVariable["BluforCash", _cost, true];
-	}
-	else
-	{
-		server setVariable["OpforCash", _cost, true];
+	if(isMultiplayer) then {
+		_cash = _cash - _cost;
+		if(side player == west) then {
+			server setVariable["BluforCash", _cost, true];
+		}
+		else
+		{
+			server setVariable["OpforCash", _cost, true];
+		};
 	};
+	
+	[_veh, _type] call AddBehaviorToPlacable;
 };
-
-
 
