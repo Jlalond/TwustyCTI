@@ -40,6 +40,7 @@ class vehicleDialog
 			y = 0.621 * safezoneH + safezoneY;
 			w = 0.128906 * safezoneW;
 			h = 0.132 * safezoneH;
+			action = "[[100, 100] call GetCurrentSelectedObject] call SpawnPurchasedVehicle; closeDialog 0;"
 		};
 		////////////////////////////////////////////////////////
 		// GUI EDITOR OUTPUT END

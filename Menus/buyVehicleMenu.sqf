@@ -1,11 +1,9 @@
 params ["_type"];
 
 createDialog "vehicleDialog";
-sleep 2;
 _types = [_type] call GetVehicleConfigs;
 diag_log format ["Got types for vehicle purchase: %1", _types];
 _ctrl = findDisplay 100;
-_priceControl = _ctrl displayCtrl 101;
 {
 	// vehicles are a tuple of name, price
 	lbAdd[100, format ["%1", (_x select 0)]];

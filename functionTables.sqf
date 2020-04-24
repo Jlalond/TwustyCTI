@@ -14,5 +14,6 @@ OpenArsenal = compile preprocessFile "openArsenalForSide.sqf";
 BuyVehicle = compile preprocessFile "Menus\buyVehicleMenu.sqf";
 GetVehicleConfigs = compile preprocessFile "Configuration\getVehicleConfigs.sqf";
 SpawnPurchasedVehicle = compile preprocessFile "Menus\spawnVehicle.sqf";
+GetCurrentSelectedObject = compile preprocessFile "getCurrentSelectedObject.sqf";
 
 diag_log "Function tabled completed";

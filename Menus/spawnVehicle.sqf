@@ -1,15 +1,12 @@
-params["_entry"];
-
+params["_index"];
 _type = uiNamespace getVariable ["currentType", objNull];
-diag_log format ["Attempting to spawn vehicle %1, of type: %2", _entry, _type];
 _types = [_type] call GetVehicleConfigs;
 
-_vehCost = 0;
-{
-	if((_x select 0) == _entry) exitWith {
-		_vehCost = _x select 1;
-	};
-} forEach _types;
+_vehTuple = _types select _index;
+diag_log format ["Attempting to spawn vehicle %1, of type: %2", _vehTuple, _type];
+
+_vehCost = (_vehTuple select 1);
+_veh = (_vehTuple select 0);
 
 
 _canBuy = true;
@@ -31,9 +28,9 @@ if(!_canBuy) exitWith {hint "Get Lost! You can't afford that"};
 _pos = objNull;
 _min = 0;
 for "_i" from 0 to 20 do {
-	_pos = player findEmptyPosition [_min, 500, _entry];
+	_pos = position player findEmptyPosition [_min, 500, _veh];
 	if(!(_pos isFlatEmpty[1, -1, 0.1, 1, -1, false, objNull] isEqualTo [])) exitWith {};
-	_min = _min + 15;
+	_min = _min + 30;
 };
 
-_entry createVehicle _pos;
+_veh createVehicle _pos;
