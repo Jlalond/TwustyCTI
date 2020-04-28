@@ -67,10 +67,12 @@ while {_notCaptured} do {
 				_vehType = selectRandom _arr;
 				_pos = objNull;
 				_min = 0;
+				_max = 100;
 				for "_i" from 0 to 20 do {
-					_pos = markerPos _marker findEmptyPosition [_min, 500, _vehType];
-					if(!(_pos isFlatEmpty[1, -1, 0.1, 1, -1, false, objNull] isEqualTo [])) exitWith {};
+					_pos = markerPos _marker findEmptyPosition [_min, _max, _vehType];
+					if(!isNil _pos && !(_pos isFlatEmpty[1, -1, 0.1, 1, -1, false, objNull] isEqualTo [])) exitWith {};
 					_min = _min + 15;
+					_max = _max + 20;
 				};
 
 				diag_log format ["Attempting to spawn %1, at %2, with pos %3", _vehType, _marker, _pos]; 

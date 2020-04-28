@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="TWECTI">
+    <Package name="General"
+        <Container name="Topline">
+			<Key ID="STR_UI_TOP_TEXT1">
+				<Original>Cash: %1 | Current Research: %2</Original>
+			</Key>
+        </Container>
+    </Package>
+</Project>

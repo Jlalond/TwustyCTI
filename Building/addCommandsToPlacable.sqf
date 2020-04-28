@@ -9,19 +9,25 @@ if(_type == "Barracks") then {
 };
 
 if(_type == "Light Vehicle Factory") then {
-	if(side player == west) then {
-		
+	if(isMultiplayer) then {
+		[_building, side player, "Light"] remoteExec ["BuyVehicleCapability", 2, false];
+	} else {
+		[_building, side player, "Light"] spawn BuyVehicleCapability;
 	};
 };
 
 if(_type == "Heavy Vehicle Factory") then {
-	if(side player == west) then {
-
+	if(isMultiplayer) then {
+		[_building, side player, "Heavy"] remoteExec ["BuyVehicleCapability", 2, false];
+	} else {
+		[_building, side player, "Heavy"] spawn BuyVehicleCapability;
 	};
 };
 
 if(_type == "Aircraft Factory") then {
-	if(side player == west) then {
-
+		if(isMultiplayer) then {
+		[_building, side player, "Aircraft"] remoteExec ["BuyVehicleCapability", 2, false];
+	} else {
+		[_building, side player, "Aircraft"] spawn BuyVehicleCapability;
 	};
 };

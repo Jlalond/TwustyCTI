@@ -68,4 +68,13 @@ OpforGarrisonVehicles = [
 	"rhs_mi28n_vvsc"
 ];
 
+OpforLightVehicleLevelOne = [
+	["rhsusf_m998_w_4dr", 300],
+	["rhsusf_m1025_w", 300],
+	["rhsusf_m1025_w_m2", 500],
+	["rhsusf_M1078A1P2_WD_fmtv_usarmy", 400]
+];
+
+opforLightVehicles = opforLightVehicles + OpforLightVehicleLevelOne;
+
 opForGarrsionConfig = [[OpforPrimarySquad, OpforSuppressionSquad, OpforSneakyPeteSquad, OpforHeavyAT], OpforGarrisonVehicles];

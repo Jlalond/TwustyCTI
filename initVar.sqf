@@ -50,14 +50,11 @@ opforGear = opforGear + defaultGear;
 if(!isNil "ace_common_fnc_isModLoaded") then {
 	call compile preprocessFile "Configuration\Templates\ACE_Default.sqf";
 	call compile preprocessFile "Configuration\Templates\USMC_Blufor.sqf";
+	call compile preprocessFile "Configuration\Templates\RUS_Opfor.sqf";
 	call compile preprocessFile "Configuration\Templates\CHDZK_Resistance.sqf";
 };
 
-["AmmoboxInit", bluforArsenalBox] spawn BIS_fnc_arsenal;
-["AmmoboxInit", opforArsenalBox] spawn BIS_fnc_arsenal;
-
 
 // set up the markers
-[] call SpawnMarkers;
-[] spawn SpawnTeams;
+call SpawnMarkers;
 diag_log "Exiting init var";

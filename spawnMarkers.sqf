@@ -1,5 +1,5 @@
 if(isMultiplayer && !isServer) exitWith {};
-
+diag_log "Creating spawn points";
 spawnPoints = [];
 {
 	if(_x find "spawn" != -1) then {spawnPoints pushBack _x;};
@@ -13,5 +13,6 @@ allTowns = [];
 } forEach allMapMarkers;
 
 {
-	[_x, resistance, resistanceGarrisonConfig] call GarrisonMarker; 
+	[_x, resistance, resistanceGarrisonConfig] spawn GarrisonMarker; 
 } forEach allTowns;
+diag_log format ["Spawn points created, with all spawnPoints %1, and all towns %2", spawnPoints, allTowns];
