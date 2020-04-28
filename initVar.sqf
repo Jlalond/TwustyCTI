@@ -50,7 +50,6 @@ opforGear = opforGear + defaultGear;
 if(!isNil "ace_common_fnc_isModLoaded") then {
 	call compile preprocessFile "Configuration\Templates\ACE_Default.sqf";
 	call compile preprocessFile "Configuration\Templates\USMC_Blufor.sqf";
-	call compile preprocessFile "Configuration\Templates\USMC_Blufor.sqf";
 	call compile preprocessFile "Configuration\Templates\CHDZK_Resistance.sqf";
 };
 
@@ -60,4 +59,5 @@ if(!isNil "ace_common_fnc_isModLoaded") then {
 
 // set up the markers
 [] call SpawnMarkers;
+[] spawn SpawnTeams;
 diag_log "Exiting init var";

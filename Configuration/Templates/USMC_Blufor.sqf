@@ -6,7 +6,7 @@ Blufor_CV_Type = "";
 BluforLightVehicleLevelOne = [
 	["rhsusf_m998_w_4dr", 300],
 	["rhsusf_m1025_w", 300],
-	["rshusf_m1025_w_m2", 500],
+	["rhsusf_m1025_w_m2", 500],
 	["rhsusf_M1078A1P2_WD_fmtv_usarmy", 400]
 ];
 
@@ -45,6 +45,80 @@ BluforGearLevelOne = [
 	"rhs_magazine_rhs_mag_M714_white"
 ];
 
+Blufor_CV_Type = "B_T_APC_Tracked_01_CRV_F"; // yes this is vanilla
+
 bluforLightVehicles = bluforLightVehicles + BluforLightVehicleLevelOne;
 bluforGear = bluforGear + BluforGearLevelOne;
 publicVariable "bluforGear";
+
+// Squad configs
+BluforPrimarySquad = [
+	"rhsusf_army_ucp_arb_autoriflemana",
+	"rhsusf_army_ucp_arb_autorifleman",
+	"rhsusf_army_ucp_arb_maaws",
+	"rhsusf_army_ucp_arb_medic",
+	"rhsusf_army_ucp_arb_grenadier",
+	"rhsusf_army_ucp_arb_marksman",
+	"rhsusf_army_ucp_arb_riflemanat",
+	"rhsusf_army_ucp_arb_squadleader",
+	"rhsusf_army_ucp_arb_teamleader",
+	"rhsusf_army_ucp_rifleman_arb_m16",
+	"rhsusf_army_ucp_rifleman_arb_m16",
+	"rhsusf_army_ucp_arb_rifleman",
+	"rhsusf_army_ucp_arb_rifleman",
+	"rhsusf_army_ucp_aa"
+];
+
+BluforSuppresionSquad = [
+	"rhsusf_army_ucp_arb_squadleader",
+	"rhsusf_army_ucp_arb_machinegunner",
+	"rhsusf_army_ucp_arb_machinegunner",
+	"rhsusf_army_ucp_arb_machinegunner",
+	"rhsusf_army_ucp_arb_riflemanat",
+	"rhsusf_army_ucp_arb_machinegunnera",
+	"rhsusf_army_ucp_arb_machinegunnera",
+	"rhsusf_army_ucp_arb_grenadier",
+	"rhsusf_army_ucp_arb_medic"
+];
+
+BluforSneakyPeteSquad = [
+	"rhsusf_army_ucp_arb_marksman",
+	"rhsusf_army_ucp_arb_marksman",
+	"rhsusf_army_ucp_arb_sniper_m107",
+	"rhsusf_army_ucp_arb_grenadier",
+	"rhsusf_army_ucp_arb_squadleader",
+	"rhsusf_army_ucp_arb_medic",
+	"rhsusf_army_ucp_rifleman_arb_m16",
+	"rhsusf_army_ucp_rifleman_arb_m16"
+];
+
+BluforHeavyAT = [
+	"rhsusf_army_ucp_arb_squadleader",
+	"rhsusf_army_ucp_arb_medic",
+	"rhsusf_army_ucp_arb_grenadier",
+	"rhsusf_army_ucp_arb_maaws",
+	"rhsusf_army_ucp_arb_maaws",
+	"rhsusf_army_ucp_arb_maaws",
+	"rhsusf_army_ucp_arb_rifleman_m590",
+	"rhsusf_army_ucp_arb_autorifleman",
+	"rhsusf_army_ucp_arb_autoriflemana"
+];
+
+//In the future this should coincide w/ vehicle config levels
+BluforSpawnVehicles = [
+	"rhsusf_M1117_W",
+	"RHS_AH64D_wd",
+	"rhsusf_m1025_w_m2",
+	"rhsusf_m1025_w_mk19",
+	"rhsusf_m1043_w_m2",
+	"rhsusf_m1043_w_mk19",
+	"rhsusf_m1045_w",
+	"RHS_UH60M",
+	"RHS_M6_wd",
+	"RHS_M2A2_BUSKI_WD",
+	"RHS_M2A3_BUSKIII_wd",
+	"rhsusf_m1a1aim_tuski_wd",
+	"rhsusf_m1a2sep1tuskiwd_usarmy"
+];
+
+bluforGarrisonConfig = [[BluforPrimarySquad, BluforSuppresionSquad, BluforSuppresionSquad, BluforHeavyAT], BluforSpawnVehicles];

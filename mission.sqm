@@ -8,15 +8,15 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=112;
+		nextID=409;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={4059.2695,331.97141,8939.4004};
+		pos[]={4237.9175,344.33633,8690.0527};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -25,73 +25,17 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Armor_F_Beta_APC_Tracked_01",
-	"ace_realisticnames",
-	"ace_rearm",
-	"ace_refuel",
-	"ace_repair",
-	"A3_Ui_F",
-	"rhsusf_c_troops",
-	"A3_Structures_F_Civ_Market"
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=1;
 		class Item0
-		{
-			className="A3_Armor_F_Beta";
-			name="Arma 3 Beta - Armored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
-			className="ace_rearm";
-			name="ACE3 - Rearm";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item3
-		{
-			className="ace_refuel";
-			name="ACE3 - Refuel";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item4
-		{
-			className="ace_repair";
-			name="ACE3 - Repair";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item5
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item6
-		{
-			className="rhsusf_c_troops";
-			name="RHSUSF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item7
-		{
-			className="A3_Structures_F";
-			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -124,99 +68,514 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=57;
 		class Item0
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4068.1255,326.61923,8949.4766};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{this call CanBuild;}";
-			};
-			id=15;
-			type="B_APC_Tracked_01_CRV_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""arifle_MX_F"",""arifle_MX_SW_F"",""launch_NLAW_F"",""FirstAidKit""],[2,1,1,10]],[[""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag"",""HandGrenade"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""Titan_AT"",""Titan_AP"",""Titan_AA""],[24,12,6,6,6,3,3,3,3,8,8,8,8,2,2,2]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
+			dataType="Marker";
+			position[]={3827.0879,310.98999,8857.0098};
+			name="town_vybor";
+			type="flag_FIA";
+			id=19;
 		};
 		class Item1
 		{
 			dataType="Marker";
-			position[]={3827.0884,310.98999,8857.0098};
-			name="town_vybor";
-			type="mil_circle";
-			id=19;
+			position[]={2263.8059,263.48364,9260.5586};
+			name="spawn_1";
+			type="Empty";
+			id=351;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item2
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4060.0918,323.99142,8946.7461};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=109;
-					type="rhsusf_socom_marsoc_jtac";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=108;
+			dataType="Marker";
+			position[]={3585.8445,354.65765,10553.166};
+			name="spawn_2";
+			type="Empty";
+			id=352;
+			atlOffset=-0.00024414063;
 		};
 		class Item3
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4009.4155,324.33636,9001.6924};
-				angles[]={6.2631927,0,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=111;
-			type="Land_CratesPlastic_F";
-			atlOffset=6.1035156e-005;
+			dataType="Marker";
+			position[]={4806.166,328.72754,7754.8867};
+			name="spawn_3";
+			type="Empty";
+			id=353;
+			atlOffset=-0.38290405;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={5718.853,308.37189,9507.1865};
+			name="spawn_4";
+			type="Empty";
+			id=354;
+			atlOffset=-0.00024414063;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={5963.4556,180.5463,5663.8394};
+			name="spawn_5";
+			type="Empty";
+			id=355;
+			atlOffset=-0.00024414063;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={5354.7896,41.669991,2961.4133};
+			name="spawn_6";
+			type="Empty";
+			id=356;
+			atlOffset=-0.00024414063;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={2070.3708,71.959045,2862.6929};
+			name="spawn_7";
+			type="Empty";
+			id=357;
+			atlOffset=-0.00024414063;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={1765.198,157.10921,5151.2549};
+			name="spawn_8";
+			type="Empty";
+			id=358;
+			atlOffset=-0.00024414063;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={4855.6035,317.99249,5735.9849};
+			name="spawn_9";
+			type="Empty";
+			id=359;
+			atlOffset=-0.00024414063;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={10392.208,228.95525,8858.3994};
+			name="spawn_10";
+			type="Empty";
+			id=360;
+			atlOffset=-0.00024414063;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={8616.9883,390.18719,9745.9072};
+			name="spawn_11";
+			type="Empty";
+			id=361;
+			atlOffset=-0.00024414063;
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={8657.708,247.83841,11215.952};
+			name="spawn_12";
+			type="Empty";
+			id=362;
+			atlOffset=-0.00024414063;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={9637.4648,241.97899,12093.369};
+			name="spawn_13";
+			type="Empty";
+			id=363;
+			atlOffset=-0.00024414063;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={11659.035,39.353176,9870.4375};
+			name="spawn_14";
+			type="Empty";
+			id=365;
+			atlOffset=-0.00024414063;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={12155.105,75.915428,8259.1221};
+			name="spawn_15";
+			type="Empty";
+			id=366;
+			atlOffset=-0.00024414063;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={11390.722,206.40608,4697.5898};
+			name="spawn_16";
+			type="Empty";
+			id=367;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={13366.537,6.781981,4131.2432};
+			name="spawn_17";
+			type="Empty";
+			id=368;
+			atlOffset=-0.00024414063;
+		};
+		class Item18
+		{
+			dataType="Marker";
+			position[]={2092.7737,249.6508,11440.755};
+			name="spawn_18";
+			type="Empty";
+			id=369;
+			atlOffset=-0.00024414063;
+		};
+		class Item19
+		{
+			dataType="Marker";
+			position[]={2734.4771,274,9954.5547};
+			name="town_lopatino";
+			type="flag_FIA";
+			id=371;
+		};
+		class Item20
+		{
+			dataType="Marker";
+			position[]={4656.1118,339,10188.875};
+			name="town_northWestAirfield";
+			type="flag_FIA";
+			id=372;
+		};
+		class Item21
+		{
+			dataType="Marker";
+			position[]={5982.1362,266.89801,10346.932};
+			name="town_Grishnio";
+			type="flag_FIA";
+			id=373;
+			atlOffset=-0.00045776367;
+		};
+		class Item22
+		{
+			dataType="Marker";
+			position[]={5342.6602,332.51199,8573.6123};
+			name="town_Kabanino";
+			type="flag_FIA";
+			id=374;
+			atlOffset=-0.00088500977;
+		};
+		class Item23
+		{
+			dataType="Marker";
+			position[]={6148.52,300.98901,7712.6309};
+			name="town_StarySobor";
+			type="flag_FIA";
+			id=375;
+			atlOffset=-0.0009765625;
+		};
+		class Item24
+		{
+			dataType="Marker";
+			position[]={4765.9819,267.509,6787.2778};
+			name="town_Rogovo";
+			type="flag_FIA";
+			id=376;
+			atlOffset=-0.0010070801;
+		};
+		class Item25
+		{
+			dataType="Marker";
+			position[]={3054.8621,304.11301,7902.4199};
+			name="town_Pustoshka";
+			type="flag_FIA";
+			id=377;
+			atlOffset=-0.00091552734;
+		};
+		class Item26
+		{
+			dataType="Marker";
+			position[]={2526.7671,299.05301,6344.3721};
+			name="town_Sosnovka";
+			type="flag_FIA";
+			id=378;
+			atlOffset=-0.0012207031;
+		};
+		class Item27
+		{
+			dataType="Marker";
+			position[]={2774.053,208.989,5364.5068};
+			name="town_Zelenogorsk";
+			type="flag_FIA";
+			id=379;
+			atlOffset=-0.0010070801;
+		};
+		class Item28
+		{
+			dataType="Marker";
+			position[]={1677.452,143.989,3822.9331};
+			name="town_Pavlovo";
+			type="flag_FIA";
+			id=380;
+			atlOffset=-0.0010070801;
+		};
+		class Item29
+		{
+			dataType="Marker";
+			position[]={3651.0481,6.9089999,2477.2};
+			name="town_Komarovo";
+			type="flag_FIA";
+			id=381;
+			atlOffset=-0.00085735321;
+		};
+		class Item30
+		{
+			dataType="Marker";
+			position[]={4498.1729,5.9790001,2450.271};
+			name="town_Balota";
+			type="flag_FIA";
+			id=382;
+			atlOffset=-0.00099992752;
+		};
+		class Item31
+		{
+			dataType="Marker";
+			position[]={6494.4541,5.9899998,2667.1599};
+			name="town_Cherno_FactoryDistrict";
+			type="flag_FIA";
+			id=383;
+			atlOffset=-0.0013604164;
+		};
+		class Item32
+		{
+			dataType="Marker";
+			position[]={7187.959,5.9997559,2238.0427};
+			name="town_Cherno_HarborDistrict";
+			type="flag_FIA";
+			id=384;
+			atlOffset=-0.00024414063;
+		};
+		class Item33
+		{
+			dataType="Marker";
+			position[]={6805.9492,5.9990001,2502.2219};
+			name="town_Cherno_ResidentalDistrict";
+			type="flag_FIA";
+			id=385;
+			atlOffset=-0.00099992752;
+		};
+		class Item34
+		{
+			dataType="Marker";
+			position[]={10113.14,6.1009998,1874.5081};
+			name="town_Elektro_FactoryDistrict";
+			type="flag_FIA";
+			id=386;
+			atlOffset=0.10099983;
+		};
+		class Item35
+		{
+			dataType="Marker";
+			position[]={10513.071,6.1009998,2269.0161};
+			name="town_Elektro_Residential";
+			type="flag_FIA";
+			id=387;
+			atlOffset=0.10099983;
+		};
+		class Item36
+		{
+			dataType="Marker";
+			position[]={12103.982,6.2399998,3525.1809};
+			name="town_Kamyshovo";
+			type="flag_FIA";
+			id=388;
+			atlOffset=0.10094118;
+		};
+		class Item37
+		{
+			dataType="Marker";
+			position[]={10128.517,245.103,5459.1108};
+			name="town_Staroye";
+			type="flag_FIA";
+			id=389;
+			atlOffset=0.10063171;
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={11273.89,253.901,5471.644};
+			name="town_Msta";
+			type="flag_FIA";
+			id=390;
+			atlOffset=0.1002655;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={12859.387,174.10001,4452.7749};
+			name="town_Tulga";
+			type="flag_FIA";
+			id=391;
+			atlOffset=0.1000061;
+		};
+		class Item40
+		{
+			dataType="Marker";
+			position[]={13419.339,5.954,6287.4648};
+			name="town_Solnichniy";
+			type="flag_FIA";
+			id=392;
+			atlOffset=0.10020924;
+		};
+		class Item41
+		{
+			dataType="Marker";
+			position[]={12005.604,54.096001,9072.0938};
+			name="town_Berezino_Residential";
+			type="flag_FIA";
+			id=393;
+			atlOffset=0.099876404;
+		};
+		class Item42
+		{
+			dataType="Marker";
+			position[]={12276.315,18.023001,9509.4238};
+			name="town_Berezino_MilitaryDistrict";
+			type="flag_FIA";
+			id=394;
+			atlOffset=0.099586487;
+		};
+		class Item43
+		{
+			dataType="Marker";
+			position[]={12821.515,6.0799999,9691.4766};
+			name="town_Berezino_Factory";
+			type="flag_FIA";
+			id=395;
+			atlOffset=0.099999905;
+		};
+		class Item44
+		{
+			dataType="Marker";
+			position[]={11185.198,201.25301,12266.464};
+			name="town_Krasnostav";
+			type="flag_FIA";
+			id=396;
+			atlOffset=0.099716187;
+		};
+		class Item45
+		{
+			dataType="Marker";
+			position[]={8629.8096,190.45399,11877.196};
+			name="town_Gvodzo";
+			type="flag_FIA";
+			id=397;
+			atlOffset=0.099594116;
+		};
+		class Item46
+		{
+			dataType="Marker";
+			position[]={9615.0303,295.858,8807.377};
+			name="town_Gorka";
+			type="flag_FIA";
+			id=398;
+			atlOffset=0.09954834;
+		};
+		class Item47
+		{
+			dataType="Marker";
+			position[]={10691.916,211.09,8044.3208};
+			name="town_Polana";
+			type="flag_FIA";
+			id=399;
+			atlOffset=0.099990845;
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={12136.84,189.29401,7245.6401};
+			name="town_Orlovets";
+			type="flag_FIA";
+			id=400;
+			atlOffset=0.099685669;
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={11232.289,76.067001,6554.4731};
+			name="town_Dolina";
+			type="flag_FIA";
+			id=401;
+			atlOffset=0.099845886;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={8485.3682,359.931,6682.7671};
+			name="town_Guglovo";
+			type="flag_FIA";
+			id=402;
+			atlOffset=0.099884033;
+		};
+		class Item51
+		{
+			dataType="Marker";
+			position[]={8107.1299,468.17401,9298.8193};
+			name="town_altarMountain";
+			type="flag_FIA";
+			id=403;
+			atlOffset=-1.8259888;
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={9678.1387,81.606003,13563.571};
+			name="town_PobedaDam";
+			type="flag_FIA";
+			id=404;
+			atlOffset=-1.8263855;
+		};
+		class Item53
+		{
+			dataType="Marker";
+			position[]={5019.4321,182,12501.381};
+			name="town_Petrovka";
+			type="flag_FIA";
+			id=405;
+		};
+		class Item54
+		{
+			dataType="Marker";
+			position[]={7541.9722,213.994,5149.0469};
+			name="town_Mogilevka";
+			type="flag_FIA";
+			id=406;
+			atlOffset=-0.0013885498;
+		};
+		class Item55
+		{
+			dataType="Marker";
+			position[]={4409.231,231.99899,4625.6348};
+			name="town_Kozlovka";
+			type="flag_FIA";
+			id=407;
+			atlOffset=-0.0010070801;
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={7174.0503,253.60394,6951.5581};
+			name="spawn_19";
+			type="Empty";
+			id=408;
+			atlOffset=-0.00024414063;
 		};
 	};
 };

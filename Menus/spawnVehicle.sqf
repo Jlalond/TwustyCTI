@@ -28,9 +28,9 @@ if(!_canBuy) exitWith {hint "Get Lost! You can't afford that"};
 _pos = objNull;
 _min = 0;
 for "_i" from 0 to 20 do {
-	_pos = position player findEmptyPosition [_min, 500, _veh];
+	_pos = position player findEmptyPosition [_min, 200];
 	if(!(_pos isFlatEmpty[1, -1, 0.1, 1, -1, false, objNull] isEqualTo [])) exitWith {};
-	_min = _min + 30;
+	_min = _min + 10;
 };
-
+diag_log format ["Attempting to spawn veh: %1, at: %2", _veh, _pos];
 _veh createVehicle _pos;
